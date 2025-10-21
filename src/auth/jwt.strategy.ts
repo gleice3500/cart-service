@@ -8,7 +8,7 @@ constructor() {
 super({
   jwtFromRequest: ExtractJwt.fromAuthHeaderAsBearerToken(),
   ignoreExpiration: false,
-  secretOrKey: 'SECRET_KEY_TEAM_A', // TEM QUE SER A MESMA CHAVE DA EQUIPE A!
+  secretOrKey: 'A_CHAVE_DA_EQUIPE_C_ESTA_ERRADA', // TEM QUE SER A MESMA CHAVE DA EQUIPE A!
 });
 
 }

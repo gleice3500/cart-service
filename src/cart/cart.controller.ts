@@ -15,10 +15,10 @@ export class CartController {
       // Este bug só será acionado se o bug da Equipe A estiver ativo
       console.error("ERRO: userId não encontrado no token!");
     }
-    return this.cartService.addItem(userId, addItemDto.productId, addItemDto.quantity);
+    return this.cartService.addItem(userId, addItemDto.product_id, addItemDto.quantity);
   }
 
-  @UseGuards(JwtAuthGuard)
+  //@UseGuards(JwtAuthGuard)
   @Get()
   getUserCart(@Request() req): any {
     const userId = req.user.userId;
